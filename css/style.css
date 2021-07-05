@@ -361,6 +361,9 @@ button:focus {
           height: auto; }
         #home-right {
           margin-bottom: 164px; } }
+      @media (max-width: 1200px) {
+        .home_banner_area {
+          background-position: unset; }}
       @media (max-width: 991px) {
         .home_banner_area .banner_inner .home_right_img {
           display: none; } }
