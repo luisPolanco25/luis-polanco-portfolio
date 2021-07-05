@@ -342,9 +342,13 @@ button:focus {
 /*----------------------------------------------------*/
 /* Home Banner Area css
 ============================================================================================ */
+#home-right {
+  width: 600px;
+  margin-bottom: 68px;
+}
 .home_banner_area {
   z-index: 1;
-  background: url(../img/banner/home-banner.png) no-repeat top center;
+  background: url(../img/banner/home-banner.svg);
   background-position: center;
   background-size: cover; }
   .home_banner_area .banner_inner {
@@ -352,9 +356,11 @@ button:focus {
     .home_banner_area .banner_inner .home_right_img {
       padding-top: 197px; }
       @media (max-width: 1480px) {
-        .home_banner_area .banner_inner .home_right_img img {
+        .home_banner_area .banner_inner .home_right_img #home-right {
           max-width: 100%;
-          height: auto; } }
+          height: auto; }
+        #home-right {
+          margin-bottom: 164px; } }
       @media (max-width: 991px) {
         .home_banner_area .banner_inner .home_right_img {
           display: none; } }
@@ -367,7 +373,7 @@ button:focus {
         .home_banner_area .banner_inner .banner_content {
           margin-top: 150px; } }
       .home_banner_area .banner_inner .banner_content h3 {
-        font-size: 40px;
+        font-size: 32px;
         margin-bottom: 20px;
         position: relative; }
           @media (max-width: 575px) {
@@ -375,7 +381,7 @@ button:focus {
               display: none; } }
       .home_banner_area .banner_inner .banner_content h1 {
         margin-top: 20px;
-        font-size: 70px;
+        font-size: 58px;
         line-height: 60px;
         margin-bottom: 25px; }
         @media (max-width: 1024px) {
@@ -2506,6 +2512,15 @@ h6 {
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s; }
+  .single-brand-item img {
+    width: 60px;
+    filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: all 0.4s ease;
+  }
   @media only screen and (max-width: 767px) {
     .single-brand-item {
       height: 100px;
@@ -2530,11 +2545,11 @@ h6 {
     border: 1px solid transparent;
     box-shadow: 0px 8px 30px rgba(118, 85, 225, 0.15); }
     .single-brand-item:hover img {
-      filter: brightness(0%);
-      -o-filter: brightness(0%);
-      -ms-filter: brightness(0%);
-      -moz-filter: brightness(0%);
-      -webkit-filter: brightness(0%); }
+      filter: brightness(100%);
+      -o-filter: brightness(100%);
+      -ms-filter: brightness(100%);
+      -moz-filter: brightness(100%);
+      -webkit-filter: brightness(100%); }
 
 .client-info {
   padding: 25px 30px;
@@ -3000,12 +3015,12 @@ h6 {
     display: none; }
 
   /* Footer Area css
-  ============================================================================================ */
+  ============================================================================================ */  
   .footer_area {
+    width: 100%;
     padding-top: 80px !important;
     padding-bottom: 80px !important;
-    background-image: none !important;
-    background-color: #fcf8ff; }
+    background-image: none !important; }
 
   /* Blog page Area css
   ============================================================================================ */
@@ -3243,32 +3258,27 @@ h6 {
 /*----------------------------------------------------*/
 /* Footer Area css
 ============================================================================================ */
-.blog_version .footer_area {
-  background: #f9f9fd; }
   .blog_version .footer_area:before {
     content: none; }
 
 .footer_area {
   padding: 120px 0;
   position: relative; }
-  .footer_area:before {
-    content: '';
-    position: absolute;
-    top: -200px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    background: #f9f9fd;
-    z-index: -1; }
   @media (max-width: 1024px) {
     .footer_area {
       padding: 60px 0; } }
   .footer_area .footer_logo {
     text-align: center; }
+    .footer_area .footer_logo h2 {
+      font-size: 26px;
+      font-weight: 700;
+      cursor: default;
+    }
     .footer_area .footer_logo h4 {
       font-size: 20px;
       color: #000000;
-      margin-top: 35px;
+      margin-top: 25px;
+      cursor: default;
       text-transform: uppercase; }
   .footer_area .footer_social {
     text-align: center;
@@ -3285,7 +3295,7 @@ h6 {
         @media (max-width: 576px) {
           .footer_area .footer_social a i {
             font-size: 25px; } }
-        .footer_area .footer_social a i:hover {
+        .footer_area .footer_social a:hover i {
           color: #854fee; }
   .footer_area .footer_bottom {
     text-align: center; }
