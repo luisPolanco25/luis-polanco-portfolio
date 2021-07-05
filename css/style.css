@@ -2470,7 +2470,8 @@ h6 {
 /* Start Features Area css
 ============================================================================================ */
 .features_area {
-  padding-bottom: 170px; }
+  padding-top: 14px;
+  padding-bottom: 90px; }
   @media (max-width: 1199px) {
     .features_area {
       padding-bottom: 50px; } }
@@ -3018,8 +3019,8 @@ h6 {
   ============================================================================================ */  
   .footer_area {
     width: 100%;
-    padding-top: 80px !important;
-    padding-bottom: 80px !important;
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
     background-image: none !important; }
 
   /* Blog page Area css
