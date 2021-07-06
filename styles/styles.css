@@ -349,8 +349,7 @@ button:focus {
 .home_banner_area {
   z-index: 1;
   background: url(../img/banner/home-banner.svg);
-  background-position: center;
-  background-size: cover; }
+  background-size: contain; }
   .home_banner_area .banner_inner {
     width: 100%; }
     .home_banner_area .banner_inner .home_right_img {
@@ -361,9 +360,6 @@ button:focus {
           height: auto; }
         #home-right {
           margin-bottom: 164px; } }
-      @media (max-width: 1200px) {
-        .home_banner_area {
-          background-position: unset; }}
       @media (max-width: 991px) {
         .home_banner_area .banner_inner .home_right_img {
           display: none; } }
