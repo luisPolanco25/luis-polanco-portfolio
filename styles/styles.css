@@ -365,6 +365,7 @@ button:focus {
           display: none; } }
     .home_banner_area .banner_inner .col-lg-7 {
       vertical-align: middle;
+      background-color: white;
       align-self: center; }
     .home_banner_area .banner_inner .banner_content {
       text-align: left; }
